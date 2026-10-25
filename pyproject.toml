@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-content-engine"
+version = "1.0.0"
+description = "Multi-agent editorial pipeline with score gates, mechanical checks and a safe WordPress publisher."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Mark Valderrama" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/markvalderrama001-svg/ai-content-engine"
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.40"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+content-engine = "content_engine.cli:main"
+
+[tool.setuptools]
+packages = ["content_engine"]
+
+[tool.setuptools.package-data]
+content_engine = ["prompts/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]

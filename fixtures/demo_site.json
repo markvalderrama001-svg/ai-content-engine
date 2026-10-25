@@ -1,0 +1,12 @@
+{
+  "site": "https://demo-finance-blog.example.com",
+  "note": "Synthetic demo data. Fictional posts on a fictional small-business finance site.",
+  "posts": [
+    {"id": 9001, "slug": "card-reconciliation", "title": "How to Reconcile a Business Credit Card", "date": "2025-03-14T08:00:00", "file": "posts/card-reconciliation.html"},
+    {"id": 9002, "slug": "month-end-close", "title": "A Month-End Close Checklist for a 5-Person Finance Team", "date": "2025-04-02T08:00:00", "file": "posts/month-end-close.html"},
+    {"id": 9003, "slug": "cash-vs-accrual", "title": "Cash vs Accrual Accounting for Small Businesses", "date": "2025-05-20T08:00:00", "file": "posts/cash-vs-accrual.html"}
+  ],
+  "simulate_live_edit": {
+    "month-end-close": "<p>Editor note: close calendar corrected in wp-admin while the pipeline was running.</p>"
+  }
+}
